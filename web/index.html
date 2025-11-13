@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Flamapp Viewer</title>
+</head>
+<body>
+  <h2>Flamapp Web Viewer (static)</h2>
+  <p>To show a processed image: replace the sampleBase64 variable in this file with the data URI copied from the Android app logs (not implemented automatically).</p>
+  <img id="frame" alt="processed frame" style="max-width:90%;height:auto;border:1px solid #ccc;" />
+  <script>
+    // paste a data url like: data:image/png;base64,....
+    const sampleBase64 = '';
+    if (sampleBase64.length > 0) {
+      document.getElementById('frame').src = sampleBase64;
+    }
+  </script>
+</body>
+</html>
